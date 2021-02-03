@@ -5,17 +5,13 @@ export default function useFetchRecipes(query, ingredients, page = 1) {
   const [error, setError] = useState(false);
   const [data, setData] = useState(null);
   let params = `?p=${page}`;
-  let ingredientList = null;
-  if (ingredients) {
-    ingredientList = ingredients.join('%2C');
-  }
 
   if (!ingredients && query) {
     params = `?p=${page}&q=${query}`;
   } else if (!query && ingredients) {
-    params = `?p=${page}&i=${ingredientList}`;
+    params = `?p=${page}&i=${ingredients}`;
   } else if (query && ingredients) {
-    params = `?p=${page}&i=${ingredientList}&q=${query}`;
+    params = `?p=${page}&i=${ingredients}&q=${query}`;
   } else if (!query && !ingredients) {
     params = `?p=${page}`;
   }
