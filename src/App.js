@@ -1,13 +1,22 @@
-import { Fragment } from 'react';
-import { Home } from './pages';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home, Search } from './pages';
 import { Navbar } from './components';
 
 function App() {
   return (
-    <div className="content">
-      <Navbar />
-      <Home />
-    </div>
+    <Router>
+      <div className="content">
+        <Navbar />
+        <Switch>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

@@ -43,5 +43,6 @@ export default function useFetchRecipes(query, ingredients, page = 1) {
     loading,
     error,
     data,
+    page,
   };
 }

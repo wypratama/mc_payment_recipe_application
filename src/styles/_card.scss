@@ -3,10 +3,15 @@
   width: 47%;
   flex-direction: row;
   gap: 1rem;
+  &:hover {
+    background-color: $background-secondary;
+  }
   .left {
     width: 30%;
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .right {
@@ -15,5 +20,21 @@
     word-wrap: normal;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1rem;
+    h2 {
+      color: $text-secondary;
+    }
+    p {
+      font-size: large;
+      flex-grow: 1;
+    }
+    span {
+      align-self: flex-end;
+      a {
+        text-decoration: none;
+        color: $text-secondary;
+      }
+    }
   }
 }
