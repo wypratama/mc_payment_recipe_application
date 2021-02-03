@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  width: 47%;
+  flex-direction: row;
+  gap: 1rem;
+  .left {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    width: 70%;
+    text-align: justify;
+    word-wrap: normal;
+    display: flex;
+    flex-direction: column;
+  }
+}
