@@ -1,0 +1,10 @@
+.error {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span {
+    font-size: 2rem;
+    margin-bottom: 5vh;
+  }
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Logo } from '../components';
 
 export default function Navbar() {
   const history = useHistory();
@@ -14,10 +14,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="nav-content">
-        <Link className="nav-left" to="/">
-          <h1>Recipe Book</h1>
-          <span>Find Recipe Online</span>
-        </Link>
+        <Logo />
         <div className="nav-middle">
           <input
             type="text"

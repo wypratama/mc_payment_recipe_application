@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  background-color: $text-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 5vh;
+  .nav-left {
+    color: $background-primary;
+    position: relative;
+    span {
+      position: absolute;
+      bottom: -1vh;
+      right: -2vw;
+    }
+  }
+}

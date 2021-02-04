@@ -2,3 +2,8 @@ export { default as Navbar } from './Navbar';
 export { default as RecipeCard } from './RecipeCard';
 export { default as Hero } from './Hero';
 export { default as SearchHero } from './SearchHero';
+export { default as Pagination } from './Pagination';
+export { default as Logo } from './Logo';
+export { default as Footer } from './Footer';
+export { default as Loading } from './Loading';
+export { default as Error } from './Error';
