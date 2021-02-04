@@ -4,7 +4,7 @@ export default function RecipeCard(props) {
   return (
     <Link className="card" to={{ pathname: props.href }} target="_blank">
       <div className="left">
-        <img src={props.thumbnail} alt="" />
+        <img src={'https://cors.5apps.com/?uri=' + props.thumbnail} alt="" />
       </div>
       <div className="right">
         <h2> {props.title} </h2>
