@@ -15,5 +15,14 @@
       bottom: -1vh;
       right: -2vw;
     }
+    @media (max-width: $breakpoint-tablet) {
+      position: relative;
+      width: 56%;
+      span {
+        position: absolute;
+        bottom: -1vh;
+        right: -2vw;
+      }
+    }
   }
 }

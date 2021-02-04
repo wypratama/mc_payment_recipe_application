@@ -16,6 +16,9 @@
     align-items: center;
     color: $background-primary;
     padding: 10px 0;
+    @media (max-width: $breakpoint-tablet) {
+      justify-content: center;
+    }
   }
   .nav-left {
     position: relative;
@@ -24,12 +27,23 @@
       bottom: -1vh;
       right: -2vw;
     }
+    @media (max-width: $breakpoint-tablet) {
+      position: relative;
+      width: 56%;
+      span {
+        position: absolute;
+        bottom: -1vh;
+        right: -2vw;
+      }
+    }
   }
   .nav-middle {
     display: flex;
     justify-content: center;
-    // gap: 0.5vw;
     flex-grow: 1;
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
+    }
     input {
       height: 3rem;
       width: 60%;
@@ -58,6 +72,11 @@
     .search-icon {
       width: 1.5rem;
       height: 1.5rem;
+    }
+  }
+  .nav-right {
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
     }
   }
 }
